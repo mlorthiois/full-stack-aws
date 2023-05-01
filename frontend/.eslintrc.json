@@ -1,0 +1,13 @@
+{
+  "plugins": ["react"],
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0
+  },
+  "globals": {
+    "React": "writable"
+  },
+  "env": { "es6": true, "browser": true, "node": true }
+}

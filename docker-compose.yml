@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: postgres:13-alpine
+    restart: always
+    env_file:
+      - ./.env
+    volumes:
+      - ./backend/db/data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
